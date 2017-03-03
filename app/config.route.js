@@ -53,7 +53,7 @@
                 url: '/skills',
                 config: {
                     title: 'Skills',
-                    templateUrl: 'app/contact/skills.html',
+                    templateUrl: 'app/skills/skills.html',
                     settings: {
                         nav: 2,
                         content: '<i class="icon-list-alt"></i> Skills'

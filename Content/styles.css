@@ -26,8 +26,8 @@ img.displayed {
 img.bookimage {
     margin-left: auto;
     margin-right: auto;
-    max-height:150px;
-    max-width:150px;
+    max-height:100px;
+    max-width:100px;
     text-align:center !important;
 }
 .dashboardtext{
@@ -223,14 +223,14 @@ small {
 }
 
 .navbar .brand {
-    background: url(/content/images/logo.png) no-repeat left center !important;
+    background: url(/content/images/AngularJS-small.png) no-repeat left center !important;
     margin-left: -6px;
 }
 
 .navbar .brand-title {
     margin-left: 0px;
-    padding-left: 60px;
-    color:orange;
+    padding-left: 90px;
+    color:ghostwhite;
 }
 
 .navbar-logo img {

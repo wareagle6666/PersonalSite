@@ -8,13 +8,13 @@
         var log = getLogFn(controllerId);
 
         var vm = this;
-        vm.title = 'How to Contact Us';
+        vm.title = 'How to Contact Me';
 
         activate();
 
         function activate() {
             common.activateController([], controllerId)
-                .then(function () { log('You are not at Contact page'); });
+                .then(function () { log('Activated Contact Me View'); });
         }
     }
 

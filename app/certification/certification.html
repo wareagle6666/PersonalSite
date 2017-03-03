@@ -5,13 +5,10 @@
                 <div class="widget wviolet">
                     <div data-cc-widget-header title="{{vm.title}}"></div>
                     <div class="widget-content user">
-                        <div>
-                            <div class="book">Sunday School Books:</div>
-                            <br />
-                            <a class="bookimage" href="../../Content/document/Book-of- Matthew.pdf">
-                                <img class="bookimage" src="../../Content/images/bookimage.png" alt="Saint Pictures" />
-                            </a>
-                        </div>                       
+                        <h3 class="dashboardtext paragraphpadding">{{vm.role}}</h3>
+                        <ul class="listleft">
+                            <li ng-repeat="x in vm.list">{{x}}</li>
+                        </ul>                      
                     </div>
                     <div class="widget-foot">
                         <div class="clearfix"></div>

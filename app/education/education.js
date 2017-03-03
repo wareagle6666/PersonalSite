@@ -8,7 +8,7 @@
         var log = getLogFn(controllerId);
 
         var vm = this;
-        vm.title = 'Educations';
+        vm.title = 'Education';
         vm.schoolName = 'Georgia Regents University'
         vm.schoolDate = '2011 - 2014';
         vm.classTitle = 'Classes List:';
@@ -31,7 +31,7 @@
         function activate() {
             var promises = [getEducation()];
             common.activateController(promises, controllerId)
-                .then(function () { log('You are now at Education'); });
+                .then(function () { log('Activated Education View'); });
         }
 
         function getEducation() {

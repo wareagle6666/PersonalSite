@@ -8,23 +8,26 @@
         var log = getLogFn(controllerId);
 
         var vm = this;
-        var mydata;
-        $http.get('http://calendar.google.com/calendar/embed?title=St.Mary%20%26%20St.George%20Coptic%20Orthodox%20Church&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffff33&amp;src=saintmaryandsaingeorge%40gmail.com&amp;color=%231B887A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York')
-        .success(function (data) {
-            mydata = data;
-            console.log(data);
-        })
-        .error(function (data) {
-            console.log('Error: ' + data);
-        });
-        vm.test = mydata;
-        vm.title = 'Calednar';
+        vm.title = 'Accomplishments';
+        vm.role = 'List of Accoplishments:'
+        vm.list = ['Was the Lead Develoepr for Veolia North America (SourceOne) and re-designed their web application from top to bottom http://www.emsys1.com',
+        'Served as Lead Programmer and Web developer on Capstone Project in ASP.NET for Savannah River Nuclear Services (Trouble Shooting Ticketing System)',
+        'Maintainer of Georgia Regents University, Testing and Disability Department Website http://www.gru.edu/military/testing-disability.php',
+        'Developed Saint Augustine Coptic Orthodox Church Website http://www.suscopts.org/staugustineaugusta/',
+        'Developed Archangel Michael Coptic Orthodox Church Website http://www.suscopts.org/archangelmichaelmacon/',
+        'Developed of managing system to the Youth Training Company, resulting in a 50% increase in employee productivity',
+        'My Portfolio website http://www.aboutmewebsite.net/',
+        'Was awarded the Microsoft JavaScript Professional Certifications',
+        'Attended 2 Microsoft Visual Studio Live',
+        'Member of Hack August Organizaiton',
+        'Attended Hackathon'
+        ];
        
         activate();
         
         function activate() {
             common.activateController([], controllerId)
-                .then(function () { log('You are now at Calendar page'); });
+                .then(function () { log('Activated Accomplishments View'); });
         }
     }
 })();

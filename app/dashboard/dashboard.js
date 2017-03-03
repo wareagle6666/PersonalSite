@@ -14,7 +14,7 @@
 
         function activate() {
             common.activateController([], controllerId)
-                .then(function () { log('You are now at Home Page'); });
+                .then(function () { log('Activated Kiroloss Home View'); });
         }
     }
 })();

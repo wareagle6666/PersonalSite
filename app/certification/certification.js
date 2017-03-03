@@ -8,7 +8,11 @@
         var log = getLogFn(controllerId);
 
         var vm = this;
-        vm.title = 'Our Resources';
+        vm.title = 'Certifications';
+        vm.role = 'Certifications List:'
+        vm.list = ['Microsoft Professional JavaScript Certifications Jul 2016 - Jul 2018',
+        'A+ Certifications Nov 2014',
+        'Basic Security Defense Assurance Nov 2014'];
 
         activate();
 

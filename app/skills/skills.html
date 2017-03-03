@@ -3,14 +3,38 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="widget wred">
-                    <div data-cc-widget-header title="{{vm.title}}" allow-collapse="true"></div>
+                    <div data-cc-widget-header title="{{vm.title}}" ></div>
                     <div class="widget-content user">
-
+                        <div class="widget wred">
+                            <div data-cc-widget-header title="{{vm.computer}}" allow-collapse="true"></div>
+                            <div class="widget-content user">
+                                <h3 class="dashboardtext paragraphpadding">{{vm.role}}</h3>
+                                <ul class="listleft">
+                                    <li ng-repeat="x in vm.computerList">{{x}}</li>
+                                </ul>
+                            </div>
+                            <div class="widget-foot">
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="widget wred">
+                            <div data-cc-widget-header title="{{vm.military}}" allow-collapse="true"></div>
+                            <div class="widget-content user">
+                                <h3 class="dashboardtext paragraphpadding">{{vm.role}}</h3>
+                                <ul class="listleft">
+                                    <li ng-repeat="x in vm.militaryList">{{x}}</li>
+                                </ul>
+                            </div>
+                            <div class="widget-foot">
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="widget-foot">
                         <div class="clearfix"></div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 </section>
