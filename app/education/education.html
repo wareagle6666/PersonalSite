@@ -1,0 +1,33 @@
+﻿<section id="education-view" class="mainbar" data-ng-controller="education as vm">
+    <section class="matter">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div>
+                    <div class="widget wblue">
+                        <div data-cc-widget-header title="{{vm.title}}"
+                             allow-collapse="true"></div>
+                        <div class="widget-content text-center text-info">
+                            <div class="widget wblue">
+                                <div data-cc-widget-header title="{{vm.schoolName}} {{vm.schoolDate}}"
+                                     allow-collapse="true"></div>
+                                <div class="widget-content text-center text-info">
+                                    <h1 class="dashboardtext paragraphpadding">Bachelor of Science (BS)</h1>
+                                    <h3 class="paragraphpadding listleft">{{vm.classTitle}}</h3>
+                                    <ul class="listleft">
+                                        <li ng-repeat="x in vm.courses">{{x}}</li>
+                                    </ul>
+                                </div>
+                                <div class="widget-foot">
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-foot">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
